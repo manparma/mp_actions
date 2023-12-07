@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest # runner enviorment the job will on 
     steps:
       - name: Print greeting
-        run: echo "Hellow World!"
+        run: | 
+            echo "Hellow World!"
+            echo "Hellow World2!"
       - name: Print goodbye
         run: echo "Done - bye!"
