@@ -1,0 +1,14 @@
+# name of workflow
+name: First workflow
+# when the workflow is executed by using the "on:" key followed by the event or events
+on: workflow_dispatch # maual trigger 
+# the work that needs to be done (has to be jobs:)
+# first-job is the identifier of users choice
+jobs:
+  first-job:
+    runs-on: ubuntu-latest # runner enviorment the job will on 
+    steps:
+      - name: Print greeting
+        run: echo "Hellow World!"
+      - name: Print goodbye
+        run: echo "Done - bye!"
