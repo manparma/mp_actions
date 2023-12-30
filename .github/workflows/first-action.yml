@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu-latest # runner enviorment the job will on 
     steps:
       - name: Print greeting
-        run: | 
+        run: | # Multi-Line Shell Commands
             echo "Hellow World!"
             echo "Hellow World2!"
       - name: Print goodbye
-        run: echo "Done - bye!"
+        run: echo "Done - bye!" # Single-Line Shell Commands
